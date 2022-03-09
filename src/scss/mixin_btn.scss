@@ -1,0 +1,12 @@
+@mixin btn {
+  width: 370px;
+  height: 78px;
+  display: block;
+  margin: auto;
+  background: $red1;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  cursor: pointer;
+}

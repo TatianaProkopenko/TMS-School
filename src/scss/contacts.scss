@@ -1,0 +1,86 @@
+.contacts{
+  padding: 71px 0;
+  background: $blue2;
+  @media (max-width:1024px){
+    padding: 47px 0;
+  }
+  @media (max-width:324px){
+    padding: 34px 0;
+  }
+}
+
+.contacts-row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.middle{
+  @media (max-width: 800px) {
+    margin-top: 69px;
+    margin-bottom: 59px;    
+  }
+  @media (max-width: 600px) {
+    margin-top: 25px;
+  }
+}
+
+.contacts-card{
+  margin: 0 15px;
+  width: 360px;
+  @media (max-width: 1200px) {
+   margin: 0 10px;
+   width: 315px;
+   font-size: $_14px;
+   line-height: $_16px;
+  }
+  @media (max-width: 1024px) {
+    margin-bottom: 10px;
+   }
+   @media (max-width: 324px) {
+   width: 90%;
+   }
+}
+
+.contacts-card h5{
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+color: $white;
+text-transform: uppercase;
+}
+
+.contacts-card-text{
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+color: $white;
+@include text7;
+padding-top: 29px;
+@media (max-width:1200){
+  @include text8;
+}
+}
+
+.contacts-card-list{
+  padding-top: 49px;
+}
+.contacts-list{
+  display: flex;
+  justify-content: center;
+}
+.list-item{
+  margin-right: 27px;
+  @include brands;
+  &:hover{
+    transform: scale(1.5);
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  .fa-brands{
+    color: $grey3;
+    font-size: 21px;
+  }
+}

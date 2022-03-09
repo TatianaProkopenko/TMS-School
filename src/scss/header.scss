@@ -1,0 +1,190 @@
+.header{
+  padding: 36px 0 120px;
+  background-image: url(../img/bgfirstscreen.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  position: relative;
+  z-index: 1;
+  @media (max-width:600px) {
+    padding-bottom: 52px;
+  }
+  &::after{
+    content: '';
+    background: $black3;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.container{
+  z-index: 2;
+  position: relative;
+}
+
+.header-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $grey1;
+  @media (max-width:900px){
+    border: none;
+  }
+}
+
+.header-logo{
+  text-transform: uppercase;
+  @include text4;
+  font-weight: bold;
+  text-align: left;
+}
+
+.logo-text{
+  color: $grey6;
+  &::after{
+    content: 'BOX';
+    color: $white;
+    font-weight: normal;
+  }
+}
+
+.burger-menu{
+  display: none;
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 20px;
+  @media (max-width:900px){
+    display: block;
+  }
+
+  span{
+    height: 3px;
+    width: 100%;
+    display: block;
+    background-color: $white;
+    top: 17px;
+    position: absolute;
+    &::before{
+      content: '';
+      height: 3px;
+      width: 100%;
+      display: block;
+      background-color: $white;
+      top: 10px;
+      position: absolute;
+    }
+    &::after{
+      content: '';
+      height: 3px;
+      width: 100%;
+      display: block;
+      background-color: $white;
+      top: 10px;
+      position: absolute;
+    }
+  }
+}
+.menu{
+  width: 670px;
+  @media (max-width:900px){
+    display: none;
+  }
+}
+
+.menu-list{
+  font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-list-item{
+    width: 120px;
+    padding-bottom: 36px;
+    border-bottom: 2px solid $grey5;
+    cursor: pointer;
+    @include text9;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover{
+      border-bottom: 2px solid $grey1;
+    }
+    &:active{
+      border-bottom: 1px solid $red2;
+    }
+}
+
+.menu-list-item a{
+  color: $white;
+  &:active{
+    color: $red2;
+  }
+}
+
+.header-content{
+  
+  margin: 130px auto 0;
+  color: $white;
+  width: 100%;
+}
+
+.header-content h1{
+  font-family: Raleway;
+font-style: normal;
+font-weight: 900;
+  @media (max-width: 1024px) {
+    @include text1;
+    margin: 158px auto 0;
+  }
+  @media (max-width: 324px) {
+    @include text3;
+    margin: 70px auto 0;   
+  }
+} 
+
+.header-subtitle{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+  @include text6;
+  margin: 31px auto 80px;
+  width: 100%;
+  @media (max-width: 1024px) {
+    @include text7;
+    margin: 62px auto 89px;
+  }
+  @media (max-width: 600px){
+    @include text8;
+    margin: 33px auto 49px;
+  }
+}
+
+.btn{
+  @include btn;
+  @include text6;
+  font-weight: 900;
+  text-transform: uppercase;
+ &:hover{
+   background: $red4;
+ }  
+ &:active{
+   background: $red3;
+   box-shadow: 5px 5px 25px $white;
+ }
+@media (max-width: 1024px){
+   width: 313px;
+   @include text7;
+ }
+ @media (max-width: 480px) {
+   width: 100%;
+ }
+}

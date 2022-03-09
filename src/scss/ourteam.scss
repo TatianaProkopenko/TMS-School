@@ -1,0 +1,118 @@
+.ourteam{
+  padding: 114px 0;
+  background: $white2;
+  @media (max-width:1024px){
+    padding: 78px 0;
+  }
+  @media (max-width:324px){
+    padding: 35px 0;
+  }
+}
+
+.ourteam-row{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin: 0 -15px;
+}
+
+.ourteam-card{
+  margin: 0 15px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 800px){
+    margin-bottom: 50px;
+  }
+  @media (max-width: 800px){
+    width: 230px;
+  }
+  @media (max-width: 324px){
+   width: 280px;
+  }
+}
+
+.ourteam-card-list{
+  display: flex;
+  li{
+    margin-right: 6px;
+    @include brands;
+    @media (max-width: 1200px){
+      width: 39px;
+      height: 39px;
+    }
+    @media (max-width: 1024px){
+      width: 33px;
+      height: 33px;
+    }
+    @media (max-width: 324px){
+      width: 39px;
+      height: 39px;
+    }
+    &:hover{
+      transform:scale(1.3);
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .fa-brands{
+    color:$grey3;
+    font-size: 20px;
+    @media (max-width:1024px){
+      font-size: 18px;
+    }
+    @media (max-width:324px){
+      font-size: 20px;
+    }
+  }
+}
+
+.ourteam-card-avatar{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+
+.ourteam-card-name{
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+@include text6;
+text-transform: capitalize;
+color: $black1;
+text-align: left;
+margin-top: 30px;
+margin-bottom: 5px;
+@media (max-width:1024px){
+  @include text7;
+}
+}
+.ourteam-card-position{
+  @include text7;
+  text-align: left;
+  text-transform: uppercase;
+  color: $red1;
+  @media (max-width: 1024px){
+    @include text8;
+  }
+}
+
+.ourteam-card-text{
+  @include text7;
+  text-align: left;
+  color: $grey2;
+  margin-top: 18px;
+  margin-bottom: 48px;
+  display: flex;
+  
+  @media (max-width: 1024px){
+    @include text8;
+  }
+}

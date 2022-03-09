@@ -1,0 +1,76 @@
+.awesome{
+  padding: 120px 0;
+  background: $white;
+  @media (max-width:1024px){
+    padding: 100px 0;
+  }
+  @media (max-width:324px){
+    padding: 50px 0;
+  }
+}
+
+.awesome-row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.awesome-card{
+  width: 360px;
+  margin: 0 15px 50px;
+  @media (max-width:1024px){
+    width: 314px;
+    margin: 0 10px 50px;
+  }
+  @media (max-width:480px){
+    width: 280px;
+    margin-bottom: 40px;
+  }
+}
+
+h4{
+  margin: 70px 0 50px;
+  color: $black1;
+  font-family: Raleway;
+font-style: normal;
+text-transform: uppercase;
+@media (max-width:1024px){
+ @include text7;
+  margin: 50px 0 30px;
+}
+@media (max-width:480px){
+ margin: 35px 0 10px;
+}
+}
+
+.awesome-icon{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  @media (max-width:1024px){
+    width: 55px;
+    height: 55px;
+   }
+   @media (max-width:480px){
+    width: 40px;
+    height: 40px;
+   } 
+img{
+  width: 100%;
+}
+}
+
+.awesome-text{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+@include text7;
+color: $grey2;
+@media (max-width:1024px){
+  @include text8;
+ }
+}

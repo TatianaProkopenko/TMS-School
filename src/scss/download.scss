@@ -1,0 +1,73 @@
+.download{
+  background: $white2;
+  padding: 114px 0;
+  @media (max-width:1024px){
+    padding: 78px 0;
+  }
+  @media (max-width:600px){
+    padding: 34px 0 45px;
+  }
+}
+
+
+.download-title span{
+  @include text4;
+font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+  color: $black2;
+  width: 48%;
+  margin: auto;
+  @media  (max-width:1024px) {
+    @include text6;
+  }
+  @media (max-width:600px){
+    @include text7;
+  }
+}
+
+.download-subtitle {
+margin: 15px auto 48px;
+width: 29%;
+text-transform: uppercase;
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+@media  (max-width:1024px) {
+  @include text8;
+}
+@media (max-width:600px){
+  @include text9;
+}
+}
+
+.btn{
+  @include btn;
+  @include text6;
+  text-transform: uppercase;
+  margin: auto;
+  &:hover{
+    background: $red4;
+  }
+  &:active{
+    background: $red3;
+    box-shadow: 5px 5px 25px $white;
+  }
+  @media (max-width: 1024px){
+    width: 313px;
+    @include text7;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}

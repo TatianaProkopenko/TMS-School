@@ -1,0 +1,108 @@
+.work 
+{
+max-width: 100%;
+}
+
+.work-row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  a{
+    width: 25%;
+    min-height: 20px;
+    border: 2px solid $white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    @media (max-width:768px) {
+      width: 50%;
+    }
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    &:hover .project-info{
+      display: block;
+      background-color: $red1;
+    }
+    &:active .project-info::after{
+      background-color: $red4;
+    }
+  }
+}
+
+.project-info{
+  display: none;
+  &::after{
+    content:'';
+    background-color: $red1;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.project-info-content{
+  position: absolute;
+  top:15%;
+  left:15%;
+  width: 70%;
+  margin: auto;
+  text-transform: uppercase;
+  color: $white;
+  z-index: 1;
+  @media (max-width:865px){
+    left: 10%;
+    width: 80%;
+  }
+  @media (max-width:768px){
+    top:30%;
+    left: 15%;
+    width: 70%;
+  }
+  @media (max-width:480px){
+    left: 5%;
+    width: 90%;
+  }
+  h4{
+    color: $white;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 900;
+
+    @media (max-width:1024px){
+    @include text7;
+    }
+    @media (max-width:768px){
+      @include text6;
+    }
+    @media (max-width:600px){
+      @include text7;
+    }
+  }
+}
+
+.project-description{
+  font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+  @include text7;
+  text-transform: capitalize;
+  margin-top: 15%;
+  @media (max-width:1024px){
+    @include text8;
+    }
+    @media (max-width:768px){
+      @include text7;
+    }
+    @media (max-width:600px){
+      @include text8;
+    }
+}

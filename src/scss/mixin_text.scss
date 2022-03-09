@@ -1,0 +1,53 @@
+@mixin text1 {
+  font-size: $_48px;
+  line-height: $_56px;
+  text-align: center;
+}
+
+@mixin text2 {
+  font-size: $_36px;
+  line-height: $_49px;
+  text-align: center;
+}
+@mixin text3 {
+  font-size: $_36px;
+  line-height: $_42px;
+  text-align: center;
+}
+
+@mixin text4 {
+  font-size: $_30px;
+  line-height: $_35px;
+  text-align: center;
+}
+@mixin text5 {
+  font-size: $_24px;
+  line-height: $_32px;
+  text-align: center;
+}
+
+@mixin text6 {
+  font-size: $_24px;
+  line-height: $_28px;
+  text-align: center;
+}
+@mixin text7 {
+  font-size: $_18px;
+  line-height: $_21px;
+  text-align: center;
+}
+@mixin text8 {
+  font-size: $_14px;
+  line-height: $_16px;
+  text-align: center;
+}
+@mixin text9 {
+  font-size: $_13px;
+  line-height: $_15px;
+  text-align: center;
+}
+@mixin text10 {
+  font-size: $_12px;
+  line-height: $_14px;
+  text-align: center;
+}

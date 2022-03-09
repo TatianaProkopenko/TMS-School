@@ -1,0 +1,111 @@
+	.comment .container  {
+    max-width: 100%;
+    padding: 0;
+  }
+  .comment-slider {
+    width: 100%;
+    position: relative;
+    .slick-track {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  .comment-slider-item {
+    display: flex;
+    align-items: center;
+    height: 490px;
+    width: 100%;
+    @media (max-width: 1200px) {
+      height: 332px;
+    }
+    @media (max-width: 768px) {
+      height: 212px;
+    }
+    @media (max-width: 480px) {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+  .comment-foto {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+      height: 260px;
+    }
+    @media (max-width: 320px) {
+      height: 212px;
+    }
+  }
+  .comment-text {
+    background-color: $brown1;
+    width: 55%;
+    height: 100%;
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+    h2 {
+      @include text2;
+      font-family: 'Cardo', sans-serif;
+      font-style: italic;
+      font-weight: normal;
+      width: 55%;
+      color: $white;
+      margin: auto;
+      text-transform: capitalize;
+      text-align: left;
+      margin-top: 116px;
+      @media (max-width: 1200px) {
+        margin-top: 80px;
+        @include text5;
+        text-align: left;
+      }
+      @media (max-width: 800px) {
+        margin-top: 60px;
+      }
+      @media (max-width: 768px) {
+        @include text7;
+        text-align: left;
+        margin-top: 30px;
+        width: 90%;
+      }
+      @media (max-width: 480px) {
+        @include text5;
+        width: 80%;
+      }
+    }
+    span {
+      @include text9;
+      text-align: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 55%;
+      margin: auto;
+      display: block;
+      color: $white;
+      margin-top: 15px;
+      @media (max-width: 1200px) {
+        @include text10;
+        text-align: left;
+      }
+      @media (max-width: 768px) {
+        width: 90%;
+      }
+      @media (max-width: 480px) {
+        margin-top: 25px;
+        margin-bottom: 95px;
+        text-align: center;
+        width: 85%;
+      }
+    }
+  }
